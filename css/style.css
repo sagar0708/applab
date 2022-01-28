@@ -1,0 +1,1317 @@
+/*==========================
+            default css
+============================*/
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        html {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        img{
+            max-width: 100%;
+        }
+        .container {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 15px;
+        }
+        *:focus{
+            outline: none;
+        }
+        p{
+        	font-size: 16px;
+          	font-family: 'Poppins', sans-serif; 
+          	line-height: 26px;
+          	color: #616368;
+          	font-weight: 500;
+        }
+        a.praymari-button{
+        	display: inline-block;
+        	width: 170px;
+        	height: 57px;
+        	background: transparent;
+        	border: 1px solid #2500f9;
+        	border-radius: 100px;
+        	padding: 19px 38px;	
+        	font-weight: bold; 		
+        }
+        a.praymari-button:hover{
+    		background: #2500f9;
+    		color: #fff !important;
+        }
+        a{
+        	display: inline-block;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            color: #2563ff;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        a:hover{
+        	color: #f55767;
+        }
+        h1, h2, h3, h4, h5, h6{
+        	font-family: 'Poppins', sans-serif;
+        	color: #242f51;
+        	font-weight: 600;
+        }
+        .row-box{
+        	display: block;
+        	margin: 0 -15px;
+        }
+        .two-box{
+        	display: inline-block;
+        	width: 50%;
+        	float: left;
+        	padding: 0 15px;
+        }
+        .three-box{
+        	display: inline-block;
+        	width: 33.33%;
+        	float: left;
+        	padding: 0 15px;
+        }
+        section{
+        	display: inline-block;
+        	width: 100%;
+        }
+
+
+/*===================================
+        		header
+====================================*/
+        header {
+		    padding-top: 90px;
+		    display: inline-block;
+		    width: 100%;
+		    position: absolute;
+		}
+        .logo{
+            display: inline-block;
+            padding-top: 10px;
+        }
+        .logo a {
+		    font-size: 30px;
+		    display: inline-block;
+		    font-weight: bold;
+		}
+		.logo a:first-child,
+		.logo-footer a:first-child {
+		    color: #fcae61;
+		}
+		.logo a:nth-child(2) {
+		    color: #242f51;
+		}
+		.menu {
+		    display: inline-block;
+		    float: right;
+		}
+        .menu ul{
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        .menu > ul > li,
+        .menu-footer > ul > li{
+            display: inline-block;
+            position: relative;
+        }
+        .menu > ul > li > a,
+        .menu-footer > ul > li > a {
+            text-decoration: none;
+            color: #242f51;
+            margin: 0 30px 0 0;
+        }
+        .menu > ul > li > a:hover,
+        .menu-footer > ul > li > a:hover{
+        	color: #f55767;
+        }
+        .menu > ul > li > a.praymari-button {
+		    margin: 0;
+		}
+		.menu ul li:nth-child(5) a {
+		    margin-right: 46px;
+		}
+		.bar-1, .bar-2, .bar-3 {
+            width: 20px;
+            height: 2px;
+            background-color: #333;
+            margin: 4px 0;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .active .bar-1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(0px, 0px);
+        }
+        .active .bar-2 {opacity: 0;}
+        .active .bar-3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -9px);
+        }
+        .toggle {
+            display: none;
+        } 
+
+
+/*===================================
+        		banner
+====================================*/
+		section.banner{
+			background-image: url(../image/banner-bg.png);
+		    background-size: auto 100%;
+		    background-position: center;
+		    padding-top: 205px;
+		    padding-bottom: 65px;
+		}
+		.two-box.best-app > a.praymari-button {
+		    width: 61%;
+		    height: 36px;
+		    padding: 10px 50px;
+		    border: none;
+		    background: #E2EAED;
+		    color: #000;
+		    position: relative;
+		}
+		.two-box.best-app > a.praymari-button:hover{
+			color: #f55767 !important;	
+		}
+		.two-box.best-app > img {
+		    position: absolute;
+		    z-index: 1;
+		}
+		.two-box.best-app h1,
+		.row-box.smart-jackport .two-box h1 {
+		    font-size: 60px;
+		    line-height: 75px;
+		    padding-bottom: 20px;
+		    padding-top: 15px;
+		}
+		.demo-video {
+		    display: inline-block;
+		    padding-top: 38px;
+		}
+		.demo-video a {
+		    margin-right: 20px;
+		}
+		.two-box.best-app-img {
+		    text-align: center;
+		}
+		.two-box.best-app-img img {
+		    box-shadow: 0px 0px 57px -30px #000;
+		    border-radius: 65px;
+		}
+		.two-box.best-app {
+		    padding-top: 180px;
+		    display: inline-block;
+		}
+
+
+/*===================================
+        		slider
+====================================*/
+		section.slider{
+			padding-top: 110px;
+		}
+		section.slider p {
+		    color: #242f51;
+		    font-weight: 500;
+		    text-align: center;
+		    padding-bottom: 40px;
+		}
+		.slid.slick-initialized .slick-slide{
+			padding:  0 30px;
+		}
+		.slid.slick-initialized.slick-slider {
+		    margin: 0 -30px;
+		}
+
+
+/*===================================
+        		Awe some
+====================================*/
+		.two-box.info h2 {
+		    font-size: 36px;
+		    line-height: 46px;
+		}
+		.two-box.info {
+		    width: 38%;
+		    display: inline-block;
+		}
+		.perfomance-details-img {
+		    display: inline-block;
+		    width: 26%;
+		    float: left;
+		}
+		.perfomance-details {
+		    display: inline-block;
+		    width: 71%;
+		    float: right;
+		}
+		.perfomance-details h3,
+		.three-box.network-details h3 {
+		    font-size: 20px;
+		    font-weight: 600;
+		    padding-bottom: 12px;
+		}
+		h3.info-1 {
+		    color: #f55767;
+		}
+		h3.info-2 {
+		    color: #2563ff;
+		}
+		h3.info-3 {
+		    color: #40975f;
+		}
+		.perfomance-info {
+		    display: inline-block;
+		    width: 100%;
+		    padding-bottom: 60px;
+		}
+		.two-box.info > p {
+		    padding-bottom: 85px;
+		    padding-top: 15px;
+		}
+		section.Awe-some {
+		    padding-top: 160px;
+		}
+
+
+/*===================================
+        		smart jack port
+====================================*/
+		.row-box.smart-jackport .two-box h1,
+		.two-box.degines h1{
+			font-size: 40px;
+			padding: 0;
+			line-height: 50px;
+			width: 80%;
+		}
+		.row-box.smart-jackport .two-box p {
+		    width: 85%;
+		    float: right;
+		    padding: 40px 0; 
+		}
+		.row-box.smart-jackport .two-box:nth-child(1) {
+		    border-right: 1px solid #0006;
+		}
+		.row-box.smart-jackport {
+		    display: inline-block;
+		    width: 100%;
+		    padding-top: 116px;
+		}
+
+
+/*===================================
+        		effect section
+====================================*/	
+		.three-box.network-details p {
+		    width: 80%;
+		}
+		.three-box.network-details img {
+		    padding-bottom: 30px;
+		}
+		section.effect.details {
+		    padding-top: 100px;
+		}
+
+
+/*===================================
+        		degined section
+====================================*/	
+		.two-box.degines h1,
+		.oue-app-head h1,
+		.features-heading h1,
+		.getawesome-heading h1,
+		.clenet-headenig h1,
+		.question-head h1,
+		.our-app-details h1{
+			font-size: 36px;
+			line-height: 46px;
+			padding-bottom: 25px;
+		}
+		.three-box.network-details a {
+		    width: 100%;
+		}
+		.two-box.degines {
+		    width: 44%;
+		    float: right;
+		    padding-top: 90px;
+		}
+		.two-box.degines p {
+		    width: 90%;
+		    padding-bottom: 40px;
+		}
+		.two-box.degines a.praymari-button {
+		    padding: 19px 37px;
+		}
+		section.degine {
+		    padding-top: 110px;
+		    padding-bottom: 70px;
+		    border-bottom: 2px solid #e5e6e5;
+		}
+
+
+/*===================================
+        		our app
+====================================*/
+		.oue-app-head h1,
+		.getawesome-heading h1{
+			padding: 40px 30%;
+		}
+		.row-box.our-app .three-box {
+		    text-align: center;
+		    padding-bottom: 70px;
+		}
+		.oue-app-head {
+		    text-align: center;
+		}
+		.oue-app-head p {
+		    padding: 0 22%;
+		    padding-bottom: 82px;
+		}
+		.row-box.our-app .three-box p {
+		    padding: 0 35px;
+		}
+		.row-box.our-app .three-box h3,
+		.features-details .two-box h3 {
+		    font-size: 20px;
+		    padding-bottom: 15px;
+		    padding-top: 30px;
+		}
+
+
+/*===================================
+        		features
+====================================*/
+		.features-heading h1 {
+		    width: 80%;
+		    padding-bottom: 15px;
+		}
+		.features-heading {
+		    width: 35%;
+		}
+		.features-heading p {
+		    padding-bottom: 55px;
+		}
+		.features-details .two-box {
+		    padding-bottom: 57px;
+		    padding-right: 45px;
+		}
+		section.features .row-box .features-details {
+		    margin: 0 -15px;
+		}
+		.see-all-btn {
+		    display: inline-block;
+		    width: 100%;
+		}
+		.see-all-btn a.praymari-button{
+			padding: 20px 57px;
+			margin-left: 15px;
+		}
+		section.features {
+		    padding-top: 98px;
+		    padding-bottom: 120px;
+		    background-image: url(../image/planig-img.png);
+		    background-repeat: no-repeat;
+		    background-position: right center;
+		}
+		.features-details {
+	    	display: inline-block;
+		    width: 60%;
+		}
+
+
+/*===================================
+        		get awesome
+====================================*/
+		.getawesome-heading{
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+		}
+		.getawesome-heading h1{
+			padding: 40px 25%; 
+		}
+		.getawesome-heading p{
+			display: inline-block;
+			width: 55%;
+			padding-bottom: 72px;
+		}
+		.tabs {
+			max-width: 56%;
+			display: table;
+		  	width: 100%;
+		  	margin:0 auto;
+		}
+		ul.tabs-nav {
+		    display: table;
+	        border: 2px solid #EBEBEB;
+		    margin: 0 auto;
+		    border-radius: 50px;
+		    margin-bottom: 40px;
+		}
+		ul.business-class {
+		    padding-top: 30px;
+		    padding-bottom: 28px;
+		}
+		.tabs-nav li {
+		  	float: left;
+		 	width: 50%;
+		}
+		.tabs-nav li:first-child a {
+	  	    border-right: 0;
+		    padding: 15px 30px;
+		    margin-left: 5px;
+		    margin-top: 4px;
+		    margin-bottom: 0;
+		}
+		.tabs-nav li:last-child a {
+		  	padding: 14px 40px;
+		    margin-right: 30px;
+		    margin-top: 5px;
+		    margin-bottom: 5px;
+		}
+		.business-class a {
+		  	color: #999ca5;
+		  	display: block;
+	 	 	font-weight: 600;
+			padding: 10px 0;
+			text-align: center;
+			text-decoration: none;
+		}
+		.tab-active a {
+		  	background: #2500f9;
+		  	color: #fff;
+		  	border-radius: 50px;
+		  	cursor: default;
+		}
+		.features-info h3 {
+		    font-size: 20px;
+		    padding-bottom: 2px;
+		}
+		div#tab-1 .two-box,
+		div#tab-2 .two-box  {
+		    text-align: center;
+		    box-shadow: 0px 0px 19px -8px #000;
+		    padding: 0;
+		    margin: 0 16px;
+		    width: 45%;
+		    border-radius: 10px;
+		}
+		div#tab-1 .two-box h1,
+		div#tab-2 .two-box h1{
+			font-size: 60px;
+		}
+		div#tab-1 .two-box h1, div#tab-1 .two-box p,
+		div#tab-2 .two-box h1, div#tab-2 .two-box p {
+		    display: inline-block;
+		    padding-bottom: 25px;
+		}
+		div#tab-1 .two-box h1:after,
+		div#tab-2 .two-box h1:after{
+			content: "/";
+			font-size: 18px;
+			margin-right: 2px;
+		}
+		.features-info { 
+			padding-top: 65px;
+			padding-bottom: 40px;
+		    background: #fefeff;
+		    background: -moz-linear-gradient(top,  #fefeff 0%, #f7f7f7 50%, #f4f7f9 52%, #f4f7f9 100%);
+		    background: -webkit-linear-gradient(top,  #fefeff 0%,#f7f7f7 50%,#f4f7f9 52%,#f4f7f9 100%);
+		    background: linear-gradient(to bottom,  #fefeff 0%,#f7f7f7 50%,#f4f7f9 52%,#f4f7f9 100%); 
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#f4f7f9',GradientType=0 );
+		}
+		ul.business-class~a.praymari-button {
+		    width: 210px;
+		    height: 56px;
+		    margin-bottom: 25px;
+		}
+		section.get-awesome {
+		    border-bottom: 2px solid #EBEBEB;
+		    padding-bottom: 150px;
+		}
+
+
+/*===================================
+        		meet clenet
+====================================*/
+		.clenet {
+		    background-image: url(../image/banner-clinet.png);
+		    background-repeat: no-repeat;
+		    background-position: left 100%;
+		    padding-top: 150px;
+		}
+		.row-box.zolten-clinet {
+		    display: inline-block;
+		    width: 100%;
+		    padding-top: 60px;
+		}
+		.slider-clinet {
+		    display: inline-block;
+		    width: 100%;
+		}
+		.row-box.two-box {
+		    float: right;
+		}
+		.clenet-headenig p {
+		    padding-bottom: 32px;
+		}
+		.clenet-headenig img{
+			padding-bottom: 25px;
+		}
+		.row-box.two-box h3 {
+		    padding-bottom: 35px;
+		    font-size: 20px;
+		}
+		.row-box.zolten-clinet .two-box:nth-child(1){
+			width: 24%;
+		}
+		.row-box.zolten-clinet .two-box:nth-child(2) h3{
+			padding-bottom: 5px;
+		}
+		.row-box.zolten-clinet .two-box:nth-child(2){
+			padding: 20px 0;
+		}
+		.full-wrap {
+		    width: 50%;
+		    float: right;
+		}
+		.slider-clinet button.slick-arrow {
+		    font-size: 0;
+		    position: absolute;
+		    bottom: 10%;
+		    right: 0;
+		    z-index: 1;
+		    border-radius: 50px;
+		    padding: 16px;
+		    border: 3px solid #F0F4F8;
+		    background: transparent;
+		}
+		button.slick-prev.slick-arrow {
+		    right: 8%;
+		}
+
+
+/*===================================
+        		asked question
+====================================*/
+		section.question {
+		    padding-top: 10%;
+		    padding-bottom: 120px;
+		    border-bottom: 2px solid #EBEBEB;
+		}	
+		.question-head {
+		    display: inline-block;
+		    width: 100%;
+		    text-align: center;
+		}
+		.question-head p {
+		    width: 57%;
+		    display: inline-block;
+		    padding-bottom: 60px;
+		}
+		.how-to-contect {
+		    width: 100%;
+		    margin: 0 auto;
+		    max-width: 945px;
+		    padding-left: 45px;
+		    padding-right: 80px;
+		    background: #f5f7fa;
+		    position: relative;
+		    margin-bottom: 12px;
+		}
+		.how-to-contect h3 {
+		    font-size: 20px;
+		    padding-bottom: 22px;
+		    padding-top: 22px;
+		}
+		.toggle_plus.active, .toggle_plus_2.active, .toggle_plus_3.active, .toggle_plus_4.active, .toggle_plus_5.active {
+		    top: 12%;
+		}
+		.tabing-ans, .tabing-ans-2, .tabing-ans-3, .tabing-ans-4, .tabing-ans-5{
+			display: none;
+			padding-top: 10px;
+			padding-bottom: 68px;
+		}
+		p.tabing-ans.active, p.tabing-ans-2.active, p.tabing-ans-3.active, p.tabing-ans-4.active, p.tabing-ans-5.active {
+		    display: block;
+		    width: 100% !important;
+		}
+		.bar1, .bar2, .bar3 {
+            width: 20px;
+            height: 2px;
+            background-color: #333;
+            margin: 4px 0;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .bar1 {
+		    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		    transform: rotate(0) translate(0px, 0px);
+		}
+        .bar2 {
+        	display: none;
+        }
+        .bar3 {
+		    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+		    transform: rotate(90deg) translate(-6px, 0px);
+		}
+		.toggle_plus.active .bar3, .toggle_plus_2.active .bar3, .toggle_plus_3.active .bar3, .toggle_plus_4.active .bar3, .toggle_plus_5.active .bar3 {
+		    display: none;
+		}
+		.toggle_plus, .toggle_plus_2, .toggle_plus_3, .toggle_plus_4, .toggle_plus_5 {
+		    float: right;
+		    vertical-align: top;
+		    display: inline-block;
+		    position: absolute;
+		    top: 40%;
+		    right: 7%;
+		}
+	
+
+/*===================================
+        		our app
+====================================*/
+		.our-app{
+			background-image: url(../image/our-app-2.png);
+			background-repeat: no-repeat;
+		    background-position: right 0px;
+		}
+		.our-app-details {
+		    width: 55%;
+		    position: relative;
+		}
+		.our-app-details a.praymari-button p {
+		    font-size: 20px;
+		    color: #fff;
+		}
+		.our-app-details p {
+		    padding-bottom: 50px;
+		}
+		.our-app-details a.praymari-button {
+		    border-radius: 10px;
+		    width: 185px;
+		    height: 55px;
+		    background: #000;
+		    color: #fff;
+		    padding: 7px 0 0 47px;
+		    border:0;
+		    margin-right: 30px;
+		}
+		svg#레이어_1 {
+		    height: 35px;
+		    width: 35px;
+		    position: absolute;
+		    z-index: 1;
+		    bottom: 7%;
+		    left: 2%;
+		}
+		span {
+			font-weight: 400;
+			font-size: 14px;
+		}
+		.our-app-details svg {
+		    height: 35px;
+		    width: 35px;
+		    position: absolute;
+		    fill: #fff;
+		    bottom: 7%;
+		    left: 35%;
+		}
+		section.our-app {
+		    padding-top: 90px;
+		    padding-bottom: 100px;
+		}
+
+
+/*===================================
+        		footer
+====================================*/
+		footer{
+			display: inline-block;
+			width: 100%;
+			background: #09142e;
+			padding-top: 100px;
+		}
+		.logo-footer a:last-child {
+		    color: #fff;
+		}
+		.footer-details {
+		    display: inline-block;
+		    width: 100%;
+		    text-align: center;
+		}
+		.logo-footer {
+		    display: inline-block;
+		    width: 100%;
+		    padding-bottom: 50px;
+		}
+		.menu-footer {
+		    width: 100%;
+		    display: inline-block;
+		    padding-bottom: 50px;
+		}
+		.menu-footer > ul > li > a{
+			color: #fff;
+		}
+		ul.footer-icon svg {
+		    height: 26px;
+		    width: auto;
+		    fill: #273043;
+		    -webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-ms-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+		}
+		ul.footer-icon li {
+		    display: inline-block;
+		    width: 4%;
+		}
+		ul.footer-icon {
+		    padding-bottom: 80px;
+		}
+		ul.footer-icon svg:hover{
+			fill: #f55767;
+		}
+		.copy-right {
+		    padding-bottom: 130px;
+		}
+		.copy-right p {
+		    color: rgb(255 255 255 / 13%);
+		}
+
+
+
+@media screen and (max-width: 1024px){
+
+	/*===================================
+        		header
+	====================================*/
+		.container{
+			padding: 0 20px;
+		}
+		.menu > ul > li > a{
+			margin: 0 25px 0 0;
+		}
+		.menu ul li:nth-child(5) a {
+		    margin-right: 30px;
+		}	
+
+	/*===================================
+        		banner
+	====================================*/
+		.two-box.best-app > a.praymari-button{
+			width: 75%;
+		}
+		.two-box.best-app h1, .row-box.smart-jackport .two-box h1{
+			font-size: 56px;
+			line-height: 68px;
+		}
+
+	/*===================================
+        		slider
+    ====================================*/
+    	section.slider {
+		    padding-top: 80px;
+		}
+
+	/*===================================
+        		Awe some
+	====================================*/
+		section.Awe-some {
+		    padding-top: 130px;
+		}
+		.two-box.info > p{
+			padding-bottom: 55px;
+		}
+
+	/*===================================
+        		smart jack port
+	====================================*/
+		.row-box.smart-jackport{
+			padding-top: 60px;
+		}
+		.two-box.best-app h1, .row-box.smart-jackport .two-box h1{
+			font-size: 32px;
+			line-height:48px;
+			width: auto;
+		}
+
+	/*===================================
+        		effect section
+	====================================*/
+		section.effect.details{
+			padding-top: 70px;
+		}
+		.three-box.network-details{
+			text-align: center;
+		}
+		.three-box.network-details p{
+			width: auto;
+		}
+
+	/*===================================
+        		degined section
+	====================================*/
+		section.degine{
+			padding-top: 90px;
+		}
+
+	/*===================================
+        		features
+	====================================*/
+		.features-heading{
+			width: 50%;
+		}
+		section.features .row-box .features-details{
+			margin: 0;
+		}
+		section.features{
+			padding-top: 40px;
+			padding-bottom: 30px;
+			background-size: 55% 55%;
+		}
+
+	/*===================================
+        		get awesome
+	====================================*/
+		section.get-awesome{
+			padding-bottom: 100px;
+		}
+		.tabs{
+			max-width: 70%;
+		}
+
+	/*===================================
+        		asked question
+	====================================*/
+		section.question{
+			padding-bottom: 80px;
+		}
+		.clenet{
+			padding-top: 100px;
+		}
+
+
+	/*===================================
+        		our app
+	====================================*/
+		section.our-app {
+		    padding-top: 80px;
+		    padding-bottom: 90px;
+		}
+		.our-app-details svg{
+			left: 42%;
+			bottom: 5%;
+		}
+		svg#레이어_1{
+			bottom: 5%;
+		}
+		.our-app{
+			background-position: right 20px;
+			background-size: 60%;
+		}
+	/*===================================
+    		footer
+	====================================*/
+		footer{
+			padding-top: 80px;
+		}
+		ul.footer-icon{
+			padding-bottom: 50px;
+		}	
+		.copy-right{
+			padding-bottom: 110px;
+		}
+}
+
+
+@media screen and (max-width: 768px){
+	header{
+        padding-top: 10px;
+    }
+    .toggle {
+        display: inline-block;
+        position: absolute;
+        right: 5%;
+        top: 50%; 
+        z-index: 3;
+    }
+    .menu{
+        background: rgb(255 246 211);
+        position: fixed;
+        height: 100vh;
+        width: 50% !important; 
+        left: auto;
+        padding: 80px 15px 15px;
+        top: 0;
+        bottom: 0;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        right: -325px;
+        -moz-transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -o-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(50px);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu.active{
+        right: 0;
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .menu ul{
+    	margin-top: 60px;	
+    }
+    .menu li{
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+
+    section.banner{
+    	padding-top: 100px;
+    }
+    .two-box.best-app > a.praymari-button{
+    	width: 100%;
+    }
+    .two-box.best-app-img img{
+    	width: 70%;
+    	border-radius: 45px;
+    }
+    .demo-video a{
+    	margin-right: 10px;
+    }
+
+    section.slider {
+	    padding-top: 60px;
+	}
+
+	section.Awe-some {
+	    padding-top: 90px;
+	}
+
+	.row-box.smart-jackport .two-box{
+		width: 100%;
+	}
+	.row-box.smart-jackport .two-box p{
+		float: none;
+	}
+	.row-box.smart-jackport .two-box:nth-child(1){
+		border:none;
+	}
+
+	section.effect.details{
+		padding-top: 0px;
+	}
+	.three-box.network-details{
+		width: 50%;
+		padding: 0 50px;
+		margin-top: 40px;
+	}
+	
+
+	.two-box.degines,
+	.two-box.degines-img{
+		width: 100%;
+	}
+	.two-box.degines{
+		padding-top: 40px;
+	}
+
+	.oue-app-head h1, .getawesome-heading h1{
+		padding: 40px 20%;
+	}
+	.oue-app-head p{
+		padding: 0 10%;
+		padding-bottom: 60px;
+	}
+
+
+	.row-box.our-app .three-box{
+		width: 50%;
+	}
+
+	.features-heading{
+		width: 75%;
+	}
+
+	.tabs{
+		max-width: 100%;
+	}
+
+	section.get-awesome{
+		padding-bottom: 70px;
+	}
+
+	.clenet{
+		background-image: none;
+	}
+	.full-wrap{
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+
+	.our-app-details a.praymari-button{
+		margin-right: 10px;
+	}
+	.our-app-details svg{
+		left: 51%;
+	}
+
+	.logo-footer{
+		padding-bottom: 40px;
+	}
+	.menu-footer{
+		padding-bottom: 40px;
+	}
+	.copy-right{
+		padding-bottom: 100px;
+	}
+	ul.footer-icon li{
+		width: 7%;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.two-box.best-app{
+		padding-top: 100px;
+	}
+	.two-box.best-app,
+	.two-box.best-app-img{
+		width: 100%;
+	}
+	.two-box.best-app-img{
+		padding-top: 30px;
+	}
+
+	.slick-slide img{
+		margin: 0 auto;
+	}
+
+	.two-box.info h2 {
+	    font-size: 32px;
+	    line-height: 40px;
+	}
+
+	.two-box.best-app h1, 
+	.row-box.smart-jackport .two-box h1, 
+	.two-box.degines h1,
+	.oue-app-head h1,
+	.features-heading h1,
+	.getawesome-heading h1,
+	.question-head h1{
+		font-size: 28px;
+		line-height: 42px;
+	}
+
+	.three-box.network-details{
+		margin-top: 35px;
+	}
+	.three-box.network-details img{
+		padding-bottom: 10px;
+	}
+
+	.two-box.awesome,
+	.two-box.info,
+	.row-box.our-app .three-box,
+	.three-box.network-details,
+	.features-details,
+	.features-details .two-box,
+	.row-box.smart-jackport .two-box p,
+	.features-heading h1,
+	.getawesome-heading p,
+	.question-head p,
+	.our-app-details {
+	    width: 100%;
+	}
+
+	.oue-app-head h1,
+	.getawesome-heading h1{
+		padding: 40px 0;
+	}
+	.oue-app-head p{
+		padding-bottom: 30px;
+	}
+
+	.features-details .two-box{
+		text-align: center;
+	}
+
+	div#tab-1 .two-box, div#tab-2 .two-box{
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.tabs-stage {
+	    display: inline-block;
+	    padding: 0 20px;
+	}
+
+	button.slick-prev.slick-arrow {
+	    right: 12%;
+	}
+
+	.how-to-contect{
+		padding-left: 20px;
+		padding-right: 0;
+	}
+
+	.our-app {
+		background-position: 120px 70px;
+	}
+	.our-app-details a.praymari-button{
+		margin-right: 5px;
+	}
+	svg#레이어_1 {
+	    bottom: 3%;
+	}
+	.our-app-details svg {
+	    left: 52%;
+	    bottom: 4%;
+	}
+
+	.menu-footer > ul > li > a{
+		margin: 0 7px 0 0;
+	}
+	ul.footer-icon li{
+		width: 11%;
+	}
+
+}
+
+@media screen and (max-width: 375px){
+	.two-box.best-app > a.praymari-button{
+		padding: 10px 45px;
+	}
+	.demo-video{
+		text-align: center;
+	}
+	.demo-video a:first-child{
+		margin-bottom: 20px;
+	}
+	.row-box.smart-jackport{
+		padding-top: 30px;
+	}
+	.three-box.network-details{
+		margin-top: 20px;
+	}
+	.two-box.degines{
+		padding-top: 20px;
+	}
+	.row-box.our-app .three-box{
+		padding-bottom: 30px;
+	}
+	.getawesome-heading h1{
+		padding-bottom: 20px;
+	}
+	.getawesome-heading p{
+		padding-bottom: 50px;
+	}
+	.clenet {
+		padding-top: 40px;
+	}
+	.row-box.zolten-clinet .two-box:nth-child(1){
+		width: 30%;
+	}
+	.our-app-details svg {
+	    left: 2%;
+	    bottom: 25%;
+	}
+	svg#레이어_1 {
+	    bottom: 7%;
+	}
+	.our-app-details a.praymari-button{
+		margin-bottom: 20px;
+	}
+	section.our-app{
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.menu{
+		width: auto !important;
+	}
+	.two-box.best-app > a.praymari-button{
+		padding:  10px 17px;
+		font-size: 16px;
+	}
+}
